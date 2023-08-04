@@ -595,7 +595,7 @@ func (c *ServerConn) openDataConn() (net.Conn, error) {
 		// need to make sure we do the Handshake explicitly as Write
 		// won't have been called. This is done in StorFrom().
 		//
-		// See: https://github.com/jlaffaye/ftp/issues/282
+		// See: https://github.com/RongLi-aftership/ftp/issues/282
 		conn, err := c.options.dialer.Dial("tcp", addr)
 		if err != nil {
 			return nil, err

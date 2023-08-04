@@ -94,7 +94,7 @@ var listTestsFail = []unsupportedLine{
 	{"modify=20150806235817;invalid;UNIX.owner=0; movies", errUnsupportedListLine},
 	{"Zrwxrwxrwx   1 root     other          7 Jan 25 00:17 bin -> usr/bin", errUnknownListEntryType},
 	{"total 1", errUnsupportedListLine},
-	{"000000000x ", errUnsupportedListLine}, // see https://github.com/jlaffaye/ftp/issues/97
+	{"000000000x ", errUnsupportedListLine}, // see https://github.com/RongLi-aftership/ftp/issues/97
 	{"", errUnsupportedListLine},
 }
 
